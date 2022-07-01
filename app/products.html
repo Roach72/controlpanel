@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المنتجات</title>
+<script defer src="/app.js"></script><link href="/assets/css/styles.css" rel="stylesheet"></head>
+<body>
+    <div class="page-container">
+        <sidebar><div class="c-sidebar">
+<div class="c-sidebar__control">
+    <a href="./index.html" class="c-sidebar__icon c-sidebar__logo c-sidebar__icon--large">
+        <svg viewbox="0 0 35 35">
+            <circle cx="17.5" cy="17.5" r="12" fill="transparent" stroke-width="10"></circle>
+        </svg>
+    </a>
+    <a href="./add-product.html" class="c-sidebar__icon"><i class="c-icon c-icon--plus"></i></a>
+    <a href="#search" class="c-sidebar__icon"><i class="c-icon c-icon--search"></i></a>
+    <a href="#logout" class="c-sidebar__icon"><i class="c-icon c-icon--switch"></i></a>
+    <a href="#profile" class="c-sidebar__icon c-sidebar__icon--bottom c-sidebar__icon--large c-sidebar__icon--image">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jayrobinson/128.jpg" alt="">
+    </a>            
+</div>
+<div class="c-sidebar__menu">
+    <h2 class="c-sidebar__title"><a href="./index.html">عربي</a></h2>
+    <nav class="c-sidebar__navigation">
+        <a href="./index.html" class="c-sidebar__link">نظرة عامة<i class="c-icon c-icon--equalizer"></i></a>
+        <a href="./products.html" class="c-sidebar__link">المنتجات<i class="c-icon c-icon--cart"></i></a>
+        <a href="./users.html" class="c-sidebar__link">المستخدمين<i class="c-icon c-icon--users"></i></a>
+        <a href="./orders.html" class="c-sidebar__link">الطلبات
+        <i class="c-icon c-icon--file-text"></i></a>
+    </nav>
+</div>
+<div class="c-sidebar__backdrop"></div>
+</div>
+</sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">المنتجات </h1>
+                <a class="c-btn" href="/add-product.html" name="new-product"> منتج جديد</a>
+            </header>
+            <div class="c-table c-table--select-all">
+                <header class="c-table__header">
+                    <h3 class="c-table__title">المنتجات</h3>
+                    <div class="c-table__actions"><button class="c-btn c-btn--destructive c-btn--slim">حذف</button></div>
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 من أصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </header>
+                <table class="c-table__data">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" id="select-all">
+                                <label for="select-all">تحديد الكل</label>                                
+                            </th>
+                            <th>
+                                <label for="sellect-all">تحديد الكل</label>
+                            </th>
+                            <th>المنتج</th>
+                            <th>السعر الرئيسي</th>
+                            <th>السعر المحلي</th>
+                            <th>الكمية</th>
+                            <th>المبيعات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="/assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>$19.99</td>
+                            <td>75 ر.س</td>
+                            <td>23</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="/assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>$19.99</td>
+                            <td>75 ر.س</td>
+                            <td>23</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="/assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>$19.99</td>
+                            <td>75 ر.س</td>
+                            <td>23</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="/assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>$19.99</td>
+                            <td>75 ر.س</td>
+                            <td>23</td>
+                            <td>43</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="item-1" name="item-1"></td>
+                            <td><img src="/assets/images/black-shirt.jpg" alt=""></td>
+                            <td>قميص أسود</td>
+                            <td>$19.99</td>
+                            <td>75 ر.س</td>
+                            <td>23</td>
+                            <td>43</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <footer class="c-table__footer">
+                    <div class="c-table__navigation">
+                        <span class="c-table__navigation__caption">6 من أصل 24</span>
+                        <div class="c-table__navigation__arrows">
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-right2"></i></button>
+                            <button class="c-btn c-btn--icon"><i class="c-icon c-icon--arrow-left2"></i></button>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <help><div class="c-help">
+  <i class="c-help__icon c-icon c-icon--lifebuoy"></i>
+    <div>
+        <span class="c-help__title">تعلم المزيد حول</span>
+        <a href="../index.html" class="c-help__link">المنتجات</a>
+    </div>
+ </div>
+
+</help>
+        </div>
+    </div>
+</body>
+</html>

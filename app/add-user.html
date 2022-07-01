@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة مستخدم</title>
+<script defer src="/app.js"></script><link href="/assets/css/styles.css" rel="stylesheet"></head>
+<body>
+    <div class="page-container">
+        <sidebar><div class="c-sidebar">
+<div class="c-sidebar__control">
+    <a href="./index.html" class="c-sidebar__icon c-sidebar__logo c-sidebar__icon--large">
+        <svg viewbox="0 0 35 35">
+            <circle cx="17.5" cy="17.5" r="12" fill="transparent" stroke-width="10"></circle>
+        </svg>
+    </a>
+    <a href="./add-product.html" class="c-sidebar__icon"><i class="c-icon c-icon--plus"></i></a>
+    <a href="#search" class="c-sidebar__icon"><i class="c-icon c-icon--search"></i></a>
+    <a href="#logout" class="c-sidebar__icon"><i class="c-icon c-icon--switch"></i></a>
+    <a href="#profile" class="c-sidebar__icon c-sidebar__icon--bottom c-sidebar__icon--large c-sidebar__icon--image">
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/jayrobinson/128.jpg" alt="">
+    </a>            
+</div>
+<div class="c-sidebar__menu">
+    <h2 class="c-sidebar__title"><a href="./index.html">عربي</a></h2>
+    <nav class="c-sidebar__navigation">
+        <a href="./index.html" class="c-sidebar__link">نظرة عامة<i class="c-icon c-icon--equalizer"></i></a>
+        <a href="./products.html" class="c-sidebar__link">المنتجات<i class="c-icon c-icon--cart"></i></a>
+        <a href="./users.html" class="c-sidebar__link">المستخدمين<i class="c-icon c-icon--users"></i></a>
+        <a href="./orders.html" class="c-sidebar__link">الطلبات
+        <i class="c-icon c-icon--file-text"></i></a>
+    </nav>
+</div>
+<div class="c-sidebar__backdrop"></div>
+</div>
+</sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">إضافة مستخدم</h1>
+                <button class="c-btn c-btn--primary" type="submit" form="add-user" name="submit">مستخدم جديد</button>
+            </header>
+            <form action="" class="c-form" name="add-user">
+                <div class="c-form__controls">
+                    <div class="c-upload c-upload--small js-upload">
+                        <header class="c-upload__header">
+                            <h4 class="c-upload__title">صورة المستخدم</h4>
+                        </header>
+                        <div class="c-upload__body">
+                            <label for="upload-image" class="c-upload__label">ارفع الصورة</label>
+                            <img class="js-upload-placeholder">
+                            <input type="file" name="upload-image" id="upload-image" class="c-upload__field js-upload-value" accept="image/*">
+                        </div>
+                        <span class="c-upload__label c-upload__label--remove js-upload-remove">احذف الصورة</span>
+                    </div>
+                    <div class="c-form__row">
+                       <div class="c-textfield">
+                          <label for="username" class="c-textfield__label">اسم المستخدم</label>
+                          <input type="text" class="c-textfield__input" placeholder="" id="username" required="required">
+                          <span class="c-textfield__hint"></span>
+                       </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="email" class="c-textfield__label">البريد</label>
+                            <input type="email" class="c-textfield__input" placeholder="" id="email" required="required">
+                            <span class="c-textfield__hint"></span>
+                        </div>
+                        <div class="c-textfield">
+                            <label for="email-2" class="c-textfield__label">تأكيد البريد</label>
+                            <input type="email" class="c-textfield__input" placeholder="" id="email-2" required="required">
+                            <span class="c-textfield__hint"></span>
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="password" class="c-textfield__label">كلمة المرور</label>
+                            <input type="password" class="c-textfield__input" placeholder="" id="password" required="required">
+                            <span class="c-textfield__hint"></span>
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="password-confirm" class="c-textfield__label">تأكيد كلمة المرور</label>
+                            <input type="password" class="c-textfield__input" placeholder="" id="password-confirm" required="required">
+                            <span class="c-textfield__hint"></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <help><div class="c-help">
+  <i class="c-help__icon c-icon c-icon--lifebuoy"></i>
+    <div>
+        <span class="c-help__title">تعلم المزيد حول</span>
+        <a href="../index.html" class="c-help__link">المنتجات</a>
+    </div>
+ </div>
+
+</help>
+        </div>
+    </div>
+</body>
+</html>
